@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "75c8ce45-9b23-1b71-bd06-9f135f47814f",
+		"name": "Demo-AWS-API-Lambda-S3-DynamoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 - Clear Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44331/api/v1/Meter/ClearData",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"v1",
+						"Meter",
+						"ClearData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Load Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44331/api/v1/Meter/LoadData",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"v1",
+						"Meter",
+						"LoadData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Get Data LP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Date\": \"2018/08/31\",\n\t\"Meter\": 210095893,\n\t\"DataType\": 3\n} "
+				},
+				"url": {
+					"raw": "https://localhost:44331/api/v1/Meter/GetData",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"v1",
+						"Meter",
+						"GetData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - Get Data TOU",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Date\": \"2018/09/13\",\n\t\"Meter\": 212621147,\n\t\"DataType\": 1\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44331/api/v1/Meter/GetData",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44331",
+					"path": [
+						"api",
+						"v1",
+						"Meter",
+						"GetData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AWS - 1 - Clear Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://xp65n5i3v4.execute-api.ap-southeast-2.amazonaws.com/Prod/api/v1/Meter/ClearData",
+					"protocol": "https",
+					"host": [
+						"xp65n5i3v4",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"api",
+						"v1",
+						"Meter",
+						"ClearData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AWS - 2 - Load Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://xp65n5i3v4.execute-api.ap-southeast-2.amazonaws.com/Prod/api/v1/Meter/LoadData",
+					"protocol": "https",
+					"host": [
+						"xp65n5i3v4",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"api",
+						"v1",
+						"Meter",
+						"LoadData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AWS - 3 - Get Data LP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Date\": \"2018/08/31\",\n\t\"Meter\": 210095893,\n\t\"DataType\": 3\n}"
+				},
+				"url": {
+					"raw": "https://xp65n5i3v4.execute-api.ap-southeast-2.amazonaws.com/Prod/api/v1/Meter/GetData",
+					"protocol": "https",
+					"host": [
+						"xp65n5i3v4",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"api",
+						"v1",
+						"Meter",
+						"GetData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AWS - 4 - Get Data TOU",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Date\": \"2018/09/13\",\n\t\"Meter\": 212621147,\n\t\"DataType\": 1\n}"
+				},
+				"url": {
+					"raw": "https://xp65n5i3v4.execute-api.ap-southeast-2.amazonaws.com/Prod/api/v1/Meter/GetData",
+					"protocol": "https",
+					"host": [
+						"xp65n5i3v4",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"api",
+						"v1",
+						"Meter",
+						"GetData"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
